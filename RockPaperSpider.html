@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ROCK PAPER SPIDER</title>
+  <style>
+    /* cards */
+    .card1 {
+      background-color: #a6468c;
+      padding: 10px;
+      margin-top: 10px;
+      border-style: dashed;
+      border-width: 4px;
+      border-color: #829911;
+      opacity: 100%;
+    }
+    .card2 {
+      background-color: #a6468c;
+      background-image: url("https://stinkguts.neocities.org/Web2.png");
+      background-blend-mode: overlay;
+      background-size: 610px 650px;
+      padding: 10px;
+      margin-top: 0px;
+      border-style: dashed;
+      border-width: 4px;
+      border-color: #829911;
+      opacity: 100%;
+      min-height: 500px;
+      max-height: 500px;
+      position: relative;
+    }
+    .card3 {
+      background-color: black;
+      padding: 10px;
+      margin-top: 10px;
+      border-style: dashed;
+      border-width: 4px;
+      border-color: #829911;
+      opacity: 100%;
+    }
+    .card4 {
+      background-color: black;
+      padding: 10px;
+      margin-top: 10px;
+      border-style: solid;
+      border-width: 4px;
+      border-color: #829911;
+      opacity: 100%;
+    }
+    .choices {
+      display: flex;
+      justify-content: space-around;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    	div#parentContainer { padding:none; position:relative; } 
+    	p#textToBeCovered { color:green; font-size:30px; position:relative; z-index:0; } 
+    	img#img-area2 { background-color:black; height:150px; left:-10%; position:absolute; top:200px; width:180px; z-index:1; }
+
+    .choices button {
+      margin: 5px;
+    }
+    	div#parentContainer { padding:none; position:relative; } 
+    	button#OnTop1 { background-color:none; height:80%; left:0%; position:absolute; top:-100px; width:30px; z-index:1; }
+    	button#OnTop2 { background-color:none; height:80%; left:40%; position:absolute; top:-130px; width:30px; z-index:1; }
+    	button#OnTop3 { background-color:none; height:80%; left:80%; position:absolute; top:-150px; width:30px; z-index:1; }
+    }
+
+      #scoreboardContainer {
+          display: none; 
+          background-color: rgba(255, 255, 255, 0.8);
+          border-radius: 10px;
+          padding: 20px;
+          text-align: center;
+      }
+  </style>
+  <link href="/rpsstyle.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+<div id="startContainer">
+  <button id="startButton">GO!</button>
+  <div style="background-color:black;">
+  <p>Spiders hate Rock Paper Scissors, it kills them to lose.</p>
+  </div>
+  <img src="https://stinkguts.neocities.org/bigjim.png" width=25%>
+</div>
+
+<div id="parentContainer">
+<div class="card-holder">
+  <div class="card3">
+  <div id="parentContainer">
+  <div class="scoreDisplay">
+        <img id="img-area2" src="https://stinkguts.neocities.org/jim.png" width="250" alt="">
+        <div id="heartsContainer">
+    <img class="heart" src="https://stinkguts.neocities.org/heart.png" width="30" alt="Heart">
+    <img class="heart" src="https://stinkguts.neocities.org/heart.png" width="30" alt="Heart">
+    <img class="heart" src="https://stinkguts.neocities.org/heart.png" width="30" alt="Heart">
+</div>
+      <p>SCORE:<span id="playerScoreDisplay">0</span></p>
+      <p id="heartsDisplay">HEARTS: 3</p>
+    <p><div class="scoreDisplay"></p>
+    </div>
+    <div class="results">
+      <p><div id="playerDisplay">PLAYER: </div></p>
+      <p><div id="computerDisplay">SPIDER: </div></p>
+      </div>
+      <div class="card4">
+      <p><div id="resultDisplay"></div></p>
+    </div>
+  </div>
+  </div>
+</div></div>
+<div class="card-holder">
+  <div class="card2">
+    <div id="resultDisplay"></div>
+    <div class="RPSpoder">
+      <img id="img-area" src="https://stinkguts.neocities.org/Rps/Spoder+rpsgo.gif" width="500" alt="">
+
+      <div class="choices">
+        <button id="OnTop1" onclick="playGame('rock')"><img src="https://stinkguts.neocities.org/rockhand.png" width="100"></button>
+        <button id="OnTop2" onclick="playGame('paper')"><img src="https://stinkguts.neocities.org/paperhand.png" width="100"></button>
+        <button id="OnTop3" onclick="playGame('scissors')"><img src="https://stinkguts.neocities.org/scissorhand.png" width="100"></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="scoreboardContainer">
+   <h2>Game Over!</h2>
+   <p id="scoreboardText"></p>
+   <h3>Top Scores:</h3>
+   <ol id="topScoresList"></ol>
+   <button id="refreshButton" style="display:none;" onclick="refreshPage()">RETRY</button>
+</div>
+<script src="rpsscript.js"></script>
+</body>
+</html> 
