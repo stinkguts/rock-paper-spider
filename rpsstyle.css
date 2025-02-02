@@ -1,0 +1,217 @@
+/* rock paper spider _(:07<)_ */
+
+
+body {
+  align-items: center;
+  justify-content: center;
+  background: black;
+  background-image: url("https://stinkguts.neocities.org/spiderroomdark.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  overflow: hidden;
+
+  
+  min-height: 100vh;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  color: #C4FF92;
+  font-family: monospace;
+  line-height: .5;
+  
+}
+
+#startContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#startButton {
+  background-color: #a6468c; 
+  border: 2px solid lightgreen;
+  padding: 10px 20px;
+  font-size: 20px; 
+  cursor: none;
+  transition: background-color 0.3s;
+}
+
+#startButton:hover {
+  background-color: #f0f0f0;
+}
+
+#heartsDisplay {
+    display: none; 
+}
+
+#playerDisplay {
+    display: none; 
+}
+
+#computerDisplay {
+    display: none; 
+}
+
+/*hands*/
+button{
+ background:transparent;
+ border:none;
+ z-index: 1;
+ display: inline-block;
+}
+
+button:nth-of-type(1):hover img {
+  top: -120px;
+  position: relative;
+  content: url("https://stinkguts.neocities.org/rockhandlong.png");
+  
+}
+
+button:nth-of-type(2):hover img {
+  top: -150px;
+  position: relative;
+  content: url("https://stinkguts.neocities.org/paperhandlong.png");
+}
+
+button:nth-of-type(3):hover img {
+  top: -100px;
+  position: relative;
+  content: url("https://stinkguts.neocities.org/scissorhandlong.png");
+}
+
+
+
+.choices {
+  position: relative;
+}
+p{
+  color: white;
+  text-align: center;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+h{
+  color: white;
+  text-align: center;
+}
+overlay {
+  position: absolute; 
+  width: 100%; 
+  height: 100%;
+  top: 90%;
+  right: 20%;
+  
+}
+
+.card-holder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card2 {
+   height: auto;
+   width: 500px;
+   text-align: center;
+}
+
+.card3 {
+   height: auto;
+   width: 500px;
+   text-align: center;
+}
+
+a:hover {
+  text-decoration: underline overline dotted orange;
+  cursor: url(https://stinkguts.neocities.org/redhandy.png), crosshair;
+  
+}
+body {
+  
+#scoreboardContainer {
+    display: none; 
+    background-color: black;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    
+/*bite effect*/
+}
+.red-tint {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+#scoreboardText {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#topScoresList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#topScoresList li {
+    font-size: 20px;
+    color: #333;
+    margin: 5px 0;
+}
+
+button#refreshButton {
+    margin-top: 15px; 
+    background-color: #C4FF92; 
+    color: black; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+button#refreshButton:hover {
+    background-color: #A3D68D;
+}
+#img-area2 {
+    margin-right: 10px;
+    
+}
+#img-area{
+    margin-right: 10px;
+}
+#startContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#parentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#bigJimImage {
+    width: 100px;
+    height: auto; 
+    vertical-align: middle;
+}
+
+.card-holder {
+  margin: 10px;
+}
+
+#hiddenText {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+  
+  cursor: url(https://stinkguts.neocities.org/biggerhandy.png), crosshair;
+}
